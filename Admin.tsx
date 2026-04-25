@@ -320,9 +320,12 @@ export const Admin: React.FC<AdminProps> = ({ state, currentUserEmail, role }) =
                   </div>
                 )}
               </div>
-        </div>
-        )}
-        
+            </div> {/* <-- Closes the individual travel row */}
+          ))} {/* <-- Closes the pendingTravels.map loop */}
+        </div> {/* <-- Closes the "Pending Travel" white box */}
+      </div> {/* <-- Closes the overall "Approvals" tab container */}
+    )} {/* <-- Closes the Approvals logic */}
+
       {/* STAFF TAB */}
       {activeTab === 'staff' && (
         <div className="space-y-6">
